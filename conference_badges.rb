@@ -18,9 +18,8 @@ def assign_rooms(name)
   assign
 end
 
-def printer(name)
-  attendees = []
-  attendees << batch_badge_creator(name)
-  attendees.inspect.chomp
+def printer
+  str1 = []
+  name.each {|name| str1 << batch_badge_creator(name) }
 
 end
