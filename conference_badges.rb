@@ -18,8 +18,6 @@ def assign_rooms(name)
 end
 
 def printer(name)
-badge = []
-name.each {|name| badge << batch_badge_creator(name)}
-name.each {|name| badge << assign_rooms(name)}
-puts badge.inspect
+batch_badge_creator(name)
+assign_rooms(name)
 end
