@@ -14,7 +14,7 @@ end
 def assign_rooms(name)
   assign = []
   name.each_with_index {|name, index| assign << ("Hello, #{name}! You'll be assigned to room #{index + 1}!")}
-  return assign
+  puts assign
 end
 
 def printer(name)
