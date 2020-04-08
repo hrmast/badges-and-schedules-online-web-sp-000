@@ -19,11 +19,6 @@ def assign_rooms(name)
 end
 
 def printer(name)
-  str1 = []
-  str2 = []
-  name.each {|name| str1 << batch_badge_creator(name)}
-  name.each {|name| str2 << assign_rooms(name)}
-  puts str1.chomp
-  puts str1.chomp
+  name.each_line {|name| puts batch_badge_creator(name)}
 
 end
