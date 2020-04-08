@@ -20,6 +20,7 @@ end
 
 def printer
   str1 = []
-  name.each {|name| str1 << batch_badge_creator(name) }
+  name.each {|name| str1 << batch_badge_creator(name)}
+  puts str1.chomp
 
 end
