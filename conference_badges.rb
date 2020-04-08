@@ -17,11 +17,7 @@ def assign_rooms(name)
   return assign
 end
 
-def batch_badge_creator
-
-end
-
 def printer(name)
-  print badge_maker
-  print assign_rooms
+  print batch_badge_creator(name)
+  print assign_rooms(name)
 end
