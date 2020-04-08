@@ -18,7 +18,7 @@ def assign_rooms(name)
   assign
 end
 
-def printer
+def printer(name)
   str1 = []
   name.each {|name| str1 << batch_badge_creator(name)}
   puts str1.chomp
