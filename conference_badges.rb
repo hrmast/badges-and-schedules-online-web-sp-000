@@ -18,7 +18,7 @@ def assign_rooms(name)
 end
 
 def printer(name)
-  attendees = []
-  name.each {|name| puts batch_badge_creator(name) }
-  attendees
+badge = []
+name.each {|name| badge << batch_badge_creator(name)}
+puts badge.inspect
 end
