@@ -21,6 +21,6 @@ end
 def printer(name)
   attendees = []
   attendees << batch_badge_creator(name)
-  attendees
+  attendees.inspect.chomp
 
 end
