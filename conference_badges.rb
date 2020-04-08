@@ -1,4 +1,5 @@
 # Write your code here.
+require "pry"
 name = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
 
 def badge_maker(name)
@@ -18,8 +19,8 @@ def assign_rooms(name)
 end
 
 def printer(name)
+binding.pry
 badge = []
-name.each {|name| badge << batch_badge_creator(name)}
-name.each {|name| badge << assign_rooms(name)}
-puts badge.inspect
+name.each {|name| badge << batch_badge_creator(name).inspect}
+name.each {|name| assign_rooms(name)}
 end
