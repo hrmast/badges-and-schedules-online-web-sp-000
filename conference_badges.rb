@@ -19,9 +19,8 @@ def assign_rooms(name)
 end
 
 def printer(name)
-    attendees = []
-    attendees << batch_badge_creator(name)
-    puts attendees.inspect
-
-  end
+  attendees = []
+  attendees << batch_badge_creator(name)
+  puts attendees.inspect
+  
 end
