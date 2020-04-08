@@ -8,7 +8,7 @@ end
 def batch_badge_creator(name)
   arr = []
   name.each {|name| arr << badge_maker(name)}
-  arr
+  puts arr
 end
 
 def assign_rooms(name)
@@ -18,6 +18,5 @@ def assign_rooms(name)
 end
 
 def printer(name)
-  batch_badge_creator(name)
-  assign_rooms(name)
+
 end
